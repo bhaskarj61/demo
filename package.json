@@ -1,0 +1,30 @@
+{
+  "name": "Nasscom",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.47",
+    "@babel/runtime": "^7.1.2",
+    "md5": "^2.2.1",
+    "mobx": "^4.5.0",
+    "mobx-react": "^5.2.8",
+    "react": "16.5.0",
+    "react-native": "^0.56.1",
+    "react-native-image-picker": "^0.26.10",
+    "react-native-md5": "^1.0.0",
+    "react-navigation": "^2.17.0"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.47.0",
+    "react-test-renderer": "16.5.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
