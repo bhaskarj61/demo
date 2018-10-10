@@ -15,7 +15,7 @@ import md5 from "react-native-md5";
 import ImagePicker from "react-native-image-picker";
 
 import { observer, inject } from "mobx-react";
-import SubmitButton from "../ReusableComponents/SubmitButton";
+import { AsyncStorage } from "react-native"
 
 const baseUrl = "http://test.kelltontech.net/nasscom_event/";
 userDetail = [];
@@ -152,6 +152,7 @@ export default class Profile extends Component {
       if(this.userDetail.user_data.commonProfilePic.length>0){
         this.setState({ avatarSource:{uri:this.userDetail.user_data.commonProfilePic}})
       }
+ 
     } catch (error) {
       alert(error);
     }
